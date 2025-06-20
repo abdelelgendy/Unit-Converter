@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #b9abf0;
+    background: linear-gradient(135deg, #b9abf0 0%, #8467f8 100%);
     margin-top: 25px;
     
 }
@@ -21,11 +21,13 @@ body {
     align-items: center;
     flex-direction: column;
     border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
 
 }
 
 .container {
-    box-shadow: #000000 0px 0px 30px;
+    box-shadow: 0 8px 32px rgba(105,67,255,0.13);
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -60,17 +62,38 @@ body {
     box-shadow: 0 2px 8px rgba(105,67,255,0.08);
 }
 
-#convert-btn{
-    margin-top: 15px;
-    padding: 8px 16px;
-    width: 117px;
-    height: 42px;
-    border-radius: 5px ;
+#convert-btn {
+    background: linear-gradient(90deg, #8467f8 60%, #b9abf0 100%);
+    color: #ffffff;
+    font-family: 'verdana', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
     border: none;
-    color: #3D3D3D;
-    font-weight: 500;
-    box-shadow: 0 2px 8px rgba(105,67,255,0.08);
+    border-radius: 8px;
+    width: 140px;
+    height: 48px;
+    margin-top: 15px;
+    padding: 12px 0;
+    box-shadow: 0 4px 16px rgba(105,67,255,0.12);
+    letter-spacing: 1px;
+    transition: 
+        background 0.2s,
+        color 0.2s,
+        transform 0.1s,
+        box-shadow 0.2s;
 }
+
+#convert-btn:hover,
+#convert-btn:focus {
+    background: linear-gradient(90deg, #b9abf0 60%, #8467f8 100%);
+    color: #fff;
+    cursor: pointer;
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 8px 24px rgba(105,67,255,0.18);
+    outline: 2px solid #b295ff;
+    outline-offset: 2px;
+}
+
 .unit{
     margin-top: 15px;
     font-size: 20px;
@@ -78,12 +101,18 @@ body {
     background-color: #e5e3e6;
     box-shadow: #020101 0px 0px 3px;
     padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     text-align: center;
     background: #f3f0fa;
     border: 1px solid #d1c4e9;
     box-shadow: 0 2px 8px rgba(105,67,255,0.05);
     margin-bottom: 18px;
+}
+
+.unit:hover {
+    background-color: #edeaff;
+    box-shadow: 0 4px 24px rgba(105,67,255,0.18);
+    border-color: #b9abf0;
 }
 
 .unit-text{
@@ -105,6 +134,9 @@ body {
 
 .units{
     align-items: center;
+    gap: 18px;
+    display: flex;
+    flex-direction: column;
 }
 
 .unit-text{
@@ -125,6 +157,19 @@ body {
     font-family: 'verdana', sans-serif;
     font-weight: 500;
     font-size: 16px;
+}
+
+#convert-btn, #input-el {
+    transition: 
+        background 0.2s, 
+        color 0.2s, 
+        box-shadow 0.2s, 
+        border 0.2s;
+}
+
+#input-el:focus, #convert-btn:focus {
+    outline: 2px solid #b295ff;
+    outline-offset: 2px;
 }
 
 /* Responsive adjustments */
