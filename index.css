@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    background-color: #b9abf0;
+    margin-top: 25px;
+    
+}
+
+#title-el {
+    text-align: center;
+    color:#ffffff;
+    font-family: 'verdana', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+
+}
+.header {
+    background-color: #6943FF;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+
+}
+
+.container {
+    box-shadow: #000000 0px 0px 30px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    width:fit-content;
+    height: fit-content;
+    margin: auto;
+    padding-bottom: 30px;
+    border-radius: 15px;
+
+
+}
+
+#input-el {
+    font-family: 'Consolas', 'Courier New', monospace; /* Add monospace font */
+    transition: font-size 0.2s, width 0.2s;
+    width: 117px;
+    min-width: 80px;
+    max-width: 250px;
+    box-sizing: border-box;
+    height: 83px;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#convert-btn{
+    margin-top: 15px;
+    padding: 8px 16px;
+    width: 117px;
+    height: 42px;
+    border-radius: 5px ;
+    border: none;
+    color: #3D3D3D;
+    font-weight: 500;
+}
+.unit{
+    margin-top: 15px;
+    font-size: 20px;
+    color: #5A537B;
+    background-color: #e5e3e6;
+    box-shadow: #020101 0px 0px 3px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.unit-text{
+    font-family: 'verdana', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color:#353535;
+}
+#input-el{
+        font-family: 'verdana', sans-serif;
+        font-size:58px ;
+        text-align: center;
+        font-weight: bolder;
+        color: #FFFFFF;
+        background: transparent;
+        border: #B295FF 2px solid;
+        border-radius: 5px;
+}
+
+.units{
+    align-items: center;
+}
+
+.unit-text{
+    color: #000000;
+    font-family: 'verdana', sans-serif;
+
+}
+
+#convert-btn:hover{
+    background-color: #b9abf0;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#convert-btn{
+    background-color: #8467f8;
+    color: #ffffff;
+    font-family: 'verdana', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
