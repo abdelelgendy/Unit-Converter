@@ -1,32 +1,34 @@
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>Metric/Imperial Unit Converter</title>
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div class="container">
-            <div class="header">
-                <h1 id="title-el">Metric/Imperial Unit Conversion</h1>
-                <label for="input-el" style="display:none;">Enter value</label>
-                <input type="text" id="input-el" placeholder="#"> 
-                <button id="convert-btn">Convert</button>
-            </div>
-            <div class="units">
-                <div class="unit">
-                    <h2>Length (Meter/Feet)</h2>
-                    <p id="length-el" class="unit-text"></p>
+        <main>
+            <div class="container">
+                <div class="header">
+                    <h1 id="title-el">Metric/Imperial Unit Conversion</h1>
+                    <label for="input-el" style="display:none;">Enter value</label>
+                    <input type="text" id="input-el" placeholder="#"> 
+                    <button id="convert-btn">Convert</button>
                 </div>
-                <div class="unit">
-                    <h2>Volume (Liters/Gallons)
+                <div class="units">
+                    <div class="unit">
+                        <h2>Length (Meter/Feet)</h2>
+                        <p id="length-el" class="unit-text"></p>
+                    </div>
+                    <div class="unit">
+                        <h2>Volume (Liters/Gallons)
 </h2>
-                    <p id="volume-el" class="unit-text"></p>
-                </div>
-                <div class="unit">
-                    <h2>Mass (Kilograms/Pounds)</h2>
-                    <p id="mass-el" class="unit-text"></p>
-                </div>
-        </div>
+                        <p id="volume-el" class="unit-text"></p>
+                    </div>
+                    <div class="unit">
+                        <h2>Mass (Kilograms/Pounds)</h2>
+                        <p id="mass-el" class="unit-text"></p>
+                    </div>
+            </div>
+        </main>
         <script src="index.js"></script>
     </body>
 </html>
