@@ -113,6 +113,8 @@ body {
     background-color: #edeaff;
     box-shadow: 0 4px 24px rgba(105,67,255,0.18);
     border-color: #b9abf0;
+    transform: scale(1.01);
+    transition: transform 0.15s;
 }
 
 .unit-text{
